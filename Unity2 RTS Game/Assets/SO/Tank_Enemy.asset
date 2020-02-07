@@ -15,7 +15,10 @@ MonoBehaviour:
   name: 
   health: 0
   speed: 10
+  rotRate: 1
   damage: 20
-  healthySprite: {fileID: 0}
-  damagedSprite: {fileID: 0}
-  nearDeathSprite: {fileID: 0}
+  coolDown: 0
+  healthyColor: {r: 0, g: 0, b: 0, a: 0}
+  damagedColor: {r: 0, g: 0, b: 0, a: 0}
+  nearDeathColor: {r: 0, g: 0, b: 0, a: 0}
+  targetTags: []
