@@ -326,6 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32240188}
   - component: {fileID: 32240189}
+  - component: {fileID: 32240190}
   m_Layer: 0
   m_Name: Base_2
   m_TagString: Untagged
@@ -397,6 +398,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &32240190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32240187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac34a4479a4a64e9db57ea61b4947618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  maxCoolDown: 30
+  enemiesToSpawn:
+  - {fileID: 5445179471069899957, guid: f359f55b3751d4bdbb052b93ad677046, type: 3}
+  - {fileID: 3585236159344011253, guid: 42874a5c5e25e4ed7aabce9be5144714, type: 3}
+  minRange: 5.1
+  maxRange: 5.4
 --- !u!1 &328642540
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,9 +512,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  maxCoolDown: 30
   enemiesToSpawn:
   - {fileID: 5445179471069899957, guid: f359f55b3751d4bdbb052b93ad677046, type: 3}
   - {fileID: 5445179471069899957, guid: f359f55b3751d4bdbb052b93ad677046, type: 3}
+  minRange: 5.1
+  maxRange: 5.4
 --- !u!1 &438562312
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438562313}
   - component: {fileID: 438562314}
+  - component: {fileID: 438562315}
   m_Layer: 0
   m_Name: Base_1
   m_TagString: Untagged
@@ -576,6 +600,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &438562315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438562312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac34a4479a4a64e9db57ea61b4947618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  maxCoolDown: 30
+  enemiesToSpawn:
+  - {fileID: 5445179471069899957, guid: f359f55b3751d4bdbb052b93ad677046, type: 3}
+  - {fileID: 6985167650166624754, guid: 8fa73c9a21d7d479eb92f116611b8d0b, type: 3}
+  minRange: 5.1
+  maxRange: 5.4
 --- !u!1 &456907728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006668690}
   - component: {fileID: 2006668691}
+  - component: {fileID: 2006668692}
   m_Layer: 0
   m_Name: Base_3
   m_TagString: Untagged
@@ -2449,3 +2493,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2006668692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006668689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac34a4479a4a64e9db57ea61b4947618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  maxCoolDown: 30
+  enemiesToSpawn:
+  - {fileID: 6985167650166624754, guid: 8fa73c9a21d7d479eb92f116611b8d0b, type: 3}
+  - {fileID: 3585236159344011253, guid: 42874a5c5e25e4ed7aabce9be5144714, type: 3}
+  minRange: 5.1
+  maxRange: 5.4

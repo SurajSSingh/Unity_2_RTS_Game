@@ -7,7 +7,7 @@ public class Projectile : ScriptableObject
 {
     public int damage;
     public float speed;
-    public int size;
+    public float size;
     public Color color;
     public List<string> attackTag;
 }

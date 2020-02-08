@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1860f3b597df145878dc7d59ec39356a, type: 3}
   m_Name: EnemyProjectile
   m_EditorClassIdentifier: 
-  damage: 10
-  speed: 1
-  size: 1
+  damage: 5
+  speed: 2
+  size: 0.5
   color: {r: 1, g: 0.9345748, b: 0, a: 1}
   attackTag:
   - Player

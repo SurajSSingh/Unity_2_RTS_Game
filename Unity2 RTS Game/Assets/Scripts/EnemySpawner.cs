@@ -6,15 +6,15 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private int health = 200;
-    private float maxCoolDown = 3f;
+    public float maxCoolDown = 30f;
     private float timerCoolDown;
     public List<GameObject> enemiesToSpawn;
-    private float minRange = 5.1f;
-    private float maxRange = 5.4f;
+    public float minRange = 5.1f;
+    public float maxRange = 5.4f;
     // Start is called before the first frame update
     void Start()
     {
-        timerCoolDown = 2f;
+        timerCoolDown = 5f;
     }
 
     // Update is called once per frame
