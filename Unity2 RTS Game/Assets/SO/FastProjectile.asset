@@ -15,6 +15,6 @@ MonoBehaviour:
   damage: 2
   speed: 5
   size: 0.25
-  color: {r: 1, g: 0.9747956, b: 0, a: 1}
+  color: {r: 0.67949975, g: 1, b: 0, a: 1}
   attackTag:
   - Player

@@ -18,7 +18,7 @@ MonoBehaviour:
   rotRate: 1
   damage: 20
   coolDown: 10
-  healthyColor: {r: 0.5283019, g: 0, b: 0, a: 1}
-  damagedColor: {r: 0.4056604, g: 0.12055002, b: 0.12055002, a: 1}
-  nearDeathColor: {r: 0.49056602, g: 0.2985048, b: 0.2985048, a: 1}
+  healthyColor: {r: 0.5294118, g: 0.2943557, b: 0, a: 1}
+  damagedColor: {r: 0.40392157, g: 0.1301255, b: 0.12156862, a: 1}
+  nearDeathColor: {r: 0.49019608, g: 0.29803923, b: 0.32715186, a: 1}
   targetTags: []

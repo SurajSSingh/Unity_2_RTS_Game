@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfa958b2e61d41a693ea47d4b130f6d, type: 3}
   m_Name: Fast_Enemy
   m_EditorClassIdentifier: 
-  name: 
-  health: 50
+  name: Fast Enemy
+  health: 75
   speed: 40
   rotRate: 10
   damage: 5
   coolDown: 1
-  healthyColor: {r: 1, g: 0, b: 0.55135584, a: 1}
-  damagedColor: {r: 0.6698113, g: 0.11690103, b: 0.5816226, a: 1}
-  nearDeathColor: {r: 0.2735849, g: 0, b: 0.20616722, a: 1}
-  targetTags: []
+  healthyColor: {r: 1, g: 0.9493896, b: 0.7311321, a: 1}
+  damagedColor: {r: 1, g: 0.85165095, b: 0.4764151, a: 0}
+  nearDeathColor: {r: 0.6698113, g: 0.48274693, b: 0, a: 1}
+  targetTags:
+  - Player

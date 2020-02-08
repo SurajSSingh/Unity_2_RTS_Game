@@ -11,9 +11,13 @@ public class PlayerBaseScript : MonoBehaviour
     private int health = 1000;
     [SerializeField]
     private int resources = 100;
-    private float resourseCoolDown = 10f;
+    private float resourseCoolDown = 4f;
     private float timerCoolDown;
     private int resourcesIncrease = 100;
+    [SerializeField]
+    private int currentUnit = 0;
+    public Dropdown unitDropDown;
+    // public List<"Units"> unitList;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +33,10 @@ public class PlayerBaseScript : MonoBehaviour
         {
             timerCoolDown -= Time.deltaTime;
         }
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,5 +46,15 @@ public class PlayerBaseScript : MonoBehaviour
             health -= collision.gameObject.GetComponent<ProjectileManager>().proj.damage;
             Destroy(collision.gameObject);
         }
+    }
+
+    public void BuyUnit()
+    {
+        // Spawn the units using selection
+    }
+
+    public void SelectUnitToBuy()
+    {
+        currentUnit = unitDropDown.value;
     }
 }

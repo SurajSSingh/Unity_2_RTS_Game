@@ -29,6 +29,10 @@ public class EnemySpawner : MonoBehaviour
         {
             timerCoolDown -= Time.deltaTime;
         }
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     Vector2 RandomPostion()
