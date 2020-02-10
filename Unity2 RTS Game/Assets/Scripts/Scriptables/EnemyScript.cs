@@ -17,4 +17,6 @@ public class EnemyScript : ScriptableObject
     public Color damagedColor;
     public Color nearDeathColor;
     public List<string> targetTags;
+
+
 }

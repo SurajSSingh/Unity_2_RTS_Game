@@ -17,7 +17,7 @@ public class PlayerBaseScript : MonoBehaviour
     [SerializeField]
     private int currentUnit = 0;
     public Dropdown unitDropDown;
-    // public List<"Units"> unitList;
+    public List<GameObject> unitList;
 
     // Update is called once per frame
     void Update()
@@ -51,10 +51,28 @@ public class PlayerBaseScript : MonoBehaviour
     public void BuyUnit()
     {
         // Spawn the units using selection
+        if (unitList[currentUnit].GetComponent<PlayerManagerScript>().unit.cost <= resources)
+        {
+            resources -= unitList[currentUnit].GetComponent<PlayerManagerScript>().unit.cost;
+            SpawnUnit();
+            playerResourcesText.text = "Scraps: " + resources.ToString();
+        }
     }
 
     public void SelectUnitToBuy()
     {
         currentUnit = unitDropDown.value;
+    }
+
+    Vector2 RandomPostion()
+    {
+        Vector3 randPos = Random.onUnitSphere * Random.Range(5, 6);
+        return this.transform.position + randPos;
+    }
+
+    void SpawnUnit()
+    {
+        GameObject temp = Instantiate(unitList[currentUnit], this.transform.parent.parent);
+        temp.transform.position = RandomPostion();
     }
 }
